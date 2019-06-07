@@ -1,0 +1,11 @@
+<template>
+  <ul class='NavItems'>
+    <template for:each={links} for:item="link">
+      <my-nav-item
+        key={link.id}
+        label={link.label}
+        url={link.url}
+      ></my-nav-item>
+    </template>
+  </ul>
+</template>
